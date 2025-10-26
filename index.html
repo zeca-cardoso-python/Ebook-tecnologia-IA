@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>IA para Desenvolvedores — eBook</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="cover-body">
+    <main class="cover-container">
+        <header class="cover-header">
+            <h1 class="title">IA para Desenvolvedores em Tempo Real</h1>
+            <p class="subtitle">Como integrar inteligência artificial ao seu fluxo de desenvolvimento — práticas,
+                ferramentas e exemplos práticos.</p>
+        </header>
+
+        <section class="cover-art">
+            <svg viewBox="0 0 800 400" class="cover-svg" aria-hidden="true">
+                <defs>
+                    <linearGradient id="g" x1="0" x2="1">
+                        <stop offset="0" stop-color="#0ea5ff" />
+                        <stop offset="1" stop-color="#7c3aed" />
+                    </linearGradient>
+                </defs>
+        
+                <!-- Fundo geral -->
+                <rect x="0" y="0" width="800" height="400" rx="20" fill="#0b0b0b" />
+        
+                <g transform="translate(40,40)">
+                    <!-- 🔹 Moldura do quadrado -->
+                    <rect width="300" height="220" rx="12" fill="url(#g)" opacity="0.15" />
+        
+                    <!-- ✅ Imagem perfeitamente ajustada ao quadrado -->
+                    <image href="assets/capa.PNG" x="0" y="0" width="300" height="220" preserveAspectRatio="xMidYMid slice"
+                        clip-path="url(#clipRect)" />
+        
+                    <!-- 🔹 Define o recorte no formato do quadrado -->
+                    <clipPath id="clipRect">
+                        <rect width="300" height="220" rx="12" />
+                    </clipPath>
+        
+                    <!-- Conteúdo lateral -->
+                    <g transform="translate(340,0)">
+                        <!-- Moldura do bloco lateral -->
+                        <rect width="380" height="220" rx="12" fill="rgba(255,0,0,0.06)" />
+                    
+                        <!-- ✅ Imagem dentro do bloco lateral -->
+                        <clipPath id="clipRight">
+                            <rect width="380" height="220" rx="12" />
+                        </clipPath>
+                    
+                        <image href="assets/capa_lateral.PNG" x="0" y="0" width="380" height="220" clip-path="url(#clipRight)"
+                            preserveAspectRatio="xMidYMid slice" />
+                    
+                        <!-- Texto sobre a imagem -->
+                        <text x="20" y="40" fill="#fff" font-size="18" font-weight="600">
+                            
+                        </text>
+                    </g>
+
+        
+                    <g transform="translate(40,300)">
+                        <text fill="#f8fafc" font-size="25" font-weight="600">
+                            Criando ferramentas, automações e protótipos com IA
+                        </text>
+                    </g>
+                </g>
+            </svg>
+        </section>
+
+
+
+        <section class="cover-intro">
+            <p>Este eBook apresenta técnicas práticas para integrar IA em ferramentas e fluxos de trabalho dos
+                desenvolvedores — com exemplos, patterns e código. Todo o conteúdo interno foi gerado com auxílio de
+                inteligência artificial e revisado para clareza.</p>
+            <a class="btn-enter" href="ebook.html">ENTRAR EBOOK</a>
+        </section>
+
+        <footer class="cover-footer">
+            <small>© <span id="year"></span> Jeferson Cardoso — Todos os direitos reservados.</small>
+            <nav class="socials">
+                <a href="https://github.com/zeca-cardoso-python" target="_blank" rel="noopener">GitHub</a> |
+                <a href="https://www.linkedin.com/in/jeferson-cardoso-532b09346" target="_blank" rel="noopener">LinkedIn</a>
+            </nav>
+        </footer>
+    </main>
+
+    <script>
+        // Atualiza ano automaticamente
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
